@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startseite</title>
+<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+@media (hover: hover){.site,.site a,.site button{cursor:none}}
+@media (hover: none){.cursor{display:none}}
+.site nav a,.site .grow{display:inline-block;transition:transform .2s ease;transform-origin:left center}
+.site nav a:hover,.site .grow:hover{transform:scale(1.05)}
+a{color:#0A0A0A}a:hover{color:#5A5A5A}
+.card:hover .thumb{transform:scale(1.02)}
+.thumb{transition:transform .4s ease}
+.site input:focus,.site textarea:focus{outline:2px solid #FF3D00;outline-offset:6px}
+</style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<div class="site" style="font-family: 'Inter Tight', system-ui, sans-serif; color: #0A0A0A; background: #FFFFFF; min-height: 100vh">
+
+  <header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 2px solid #0A0A0A">
+    <nav style="max-width: 1440px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+      <a href="index.html" style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; text-decoration: none; text-transform: uppercase">Anna Kirschbauer</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em">
+        <a href="#projekte" style="text-decoration: none; padding: 10px 0">Projekte</a>
+        <a href="ueber-mich.html" style="text-decoration: none; padding: 10px 0">Über mich</a>
+        <a href="#kontakt" data-action="open-contact" style="text-decoration: none; padding: 10px 0">Kontakt</a>
+        <div style="display: flex; gap: 6px; align-items: center; padding-left: 24px; border-left: 2px solid #0A0A0A">
+          <span aria-current="true" style="padding: 10px 2px; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px">DE</span>
+          <span aria-hidden="true" style="color: #5A5A5A">/</span>
+          <a href="en/index.html" lang="en" style="text-decoration: none; padding: 10px 2px; color: #5A5A5A">EN</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section style="max-width: 1440px; margin: 0 auto; padding: 48px 32px 0">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px">
+      <h1 style="margin: 0; font-size: clamp(56px, 9vw, 152px); line-height: 0.88; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase">Marken.<br>Kampagnen.<br><span style="color: #FF3D00">Bewegung.</span></h1>    </div>
+  </section>
+
+  <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #0A0A0A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; overflow: hidden">
+    <video src="assets/video/home-01.mp4" autoplay muted loop playsinline preload="auto" aria-label="Showreel" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>
+  </div>
+
+  <section id="projekte" style="max-width: 1440px; margin: 0 auto; padding: 96px 32px 0">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 2px solid #0A0A0A; padding-bottom: 20px; margin-bottom: 40px">
+      <h2 style="margin: 0; font-size: clamp(44px, 6vw, 96px); line-height: 0.9; font-weight: 900; letter-spacing: -0.04em; text-transform: uppercase">Projekte</h2>
+      <div style="font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em">Auswahl [JAHR]–[JAHR]</div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 56px 24px">
+      <a class="card" href="#" style="flex: 1 1 520px; text-decoration: none; display: flex; flex-direction: column; gap: 16px">
+        <div style="aspect-ratio: 4 / 3; background: #EDEDED; overflow: hidden"><div class="thumb" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; color: #5A5A5A">[PROJEKTBILD]</div></div>
+        <div style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
+          <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.02em">[Projektname 02]</div>
+          <div style="font-size: 15px; font-weight: 500; color: #5A5A5A">Kampagne</div>
+        </div>
+      </a>
+      <a class="card" href="noeo.html" style="flex: 1 1 520px; text-decoration: none; display: flex; flex-direction: column; gap: 16px">
+        <div style="aspect-ratio: 4 / 3; background: #F0CCE3; overflow: hidden"><div class="thumb" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center"><img src="assets/img/home-02.svg" alt="NOEO Logo" style="width: 64%; height: auto; display: block"></div></div>
+        <div style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
+          <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.02em">NOEO</div>
+          <div style="font-size: 15px; font-weight: 500; color: #5A5A5A">Branding &amp; Raumkonzept</div>
+        </div>
+      </a>
+      <a class="card" href="idrop.html" style="flex: 1 1 520px; text-decoration: none; display: flex; flex-direction: column; gap: 16px">
+        <div style="aspect-ratio: 4 / 3; background: #0118FF; overflow: hidden"><div class="thumb" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center"><img src="assets/img/home-03.svg" alt="iDrop Logo" style="width: 58%; height: auto; display: block"></div></div>
+        <div style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
+          <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.02em">iDrop</div>
+          <div style="font-size: 15px; font-weight: 500; color: #5A5A5A">Branding &amp; Packaging</div>
+        </div>
+      </a>
+      <a class="card" href="dogtor-doodle.html" style="flex: 1 1 520px; text-decoration: none; display: flex; flex-direction: column; gap: 16px">
+        <div style="aspect-ratio: 4 / 3; background: #FFE6D2; overflow: hidden"><div class="thumb" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center"><img src="assets/img/home-04.png" alt="Dogtor Doodle Logo" style="width: 46%; height: auto; display: block"></div></div>
+        <div style="display: flex; justify-content: space-between; gap: 16px; align-items: baseline">
+          <div style="font-size: 28px; font-weight: 800; letter-spacing: -0.02em">Dogtor Doodle</div>
+          <div style="font-size: 15px; font-weight: 500; color: #5A5A5A">Motion Design</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="kontakt" style="margin-top: 160px; background: #0A0A0A; color: #FFFFFF">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 96px 32px 40px; display: flex; flex-direction: column; gap: 64px">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <div style="font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3D00">Neues Projekt?</div>
+        <a class="grow" href="mailto:an.kirschbauer@gmail.com" data-action="open-contact" style="color: #FFFFFF; text-decoration: none; font-size: clamp(44px, 7vw, 120px); line-height: 0.9; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase">Lass uns<br>reden →</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #3A3A3A; padding-top: 24px; font-size: 15px; font-weight: 500">
+        <div>an.kirschbauer@gmail.com</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px">
+          <a class="grow" href="#" style="color: #FFFFFF">Instagram</a>
+          <a class="grow" href="https://www.linkedin.com/in/anna-kirschbauer-792073270/" target="_blank" rel="noopener" style="color: #FFFFFF">LinkedIn</a>
+          <a class="grow" href="#" style="color: #FFFFFF">Impressum</a>
+          <a class="grow" href="#" style="color: #FFFFFF">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div role="dialog" aria-modal="true" aria-label="Kontakt" data-contact aria-hidden="true" style="position: fixed; inset: 0; z-index: 90; background: #0A0A0A; color: #FFFFFF; clip-path: circle(0px at 0px 0px); transition: clip-path .8s cubic-bezier(.7,0,.2,1); pointer-events: none; overflow-y: auto">
+    <div style="max-width: 1440px; min-height: 100%; margin: 0 auto; padding: 24px 32px 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <div style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; text-transform: uppercase">Anna Kirschbauer</div>
+        <button type="button" data-action="close-contact" aria-label="Schließen" style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; font-size: 34px; line-height: 1; cursor: inherit; display: flex; align-items: center; justify-content: center; padding: 0">×</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <div style="font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3D00">Lass uns reden</div>
+        <div data-if="view:choice">
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <button type="button" class="grow" data-action="open-form" style="display: block; background: none; border: 0; padding: 0; margin: 0; text-align: left; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: clamp(40px, 7vw, 120px); line-height: 1; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase; cursor: inherit">Anfrage schicken →</button>
+            <a class="grow" href="mailto:an.kirschbauer@gmail.com" style="display: block; background: none; border: 0; padding: 0; margin: 0; text-align: left; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: clamp(40px, 7vw, 120px); line-height: 1; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase; cursor: inherit">E-Mail schreiben →</a>
+          </div>
+          <div style="font-size: 18px; font-weight: 500; color: #9E9E9E">an.kirschbauer@gmail.com</div>
+        </div>
+        <div data-if="view:form" hidden>
+          <form data-contact-form style="display: flex; flex-direction: column; gap: 28px; max-width: 900px">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+              <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Name<input type="text" required autocomplete="name" name="name" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box"></label>
+              <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">E-Mail<input type="email" required autocomplete="email" name="email" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box"></label>
+            </div>
+            <fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px">
+              <legend style="padding: 0; margin-bottom: 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Wobei kann ich dir helfen?</legend>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px">
+                
+                  <div data-if="chip:0:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="0" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Branding</button></div>
+                  <div data-if="chip:0:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="0" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Branding</button></div>
+                
+                  <div data-if="chip:1:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="1" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Packaging</button></div>
+                  <div data-if="chip:1:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="1" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Packaging</button></div>
+                
+                  <div data-if="chip:2:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="2" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Kampagne</button></div>
+                  <div data-if="chip:2:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="2" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Kampagne</button></div>
+                
+                  <div data-if="chip:3:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="3" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Social Media</button></div>
+                  <div data-if="chip:3:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="3" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Social Media</button></div>
+                
+                  <div data-if="chip:4:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="4" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Website</button></div>
+                  <div data-if="chip:4:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="4" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Website</button></div>
+                
+                  <div data-if="chip:5:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="5" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Sonstiges</button></div>
+                  <div data-if="chip:5:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="5" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Sonstiges</button></div>
+                
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Nachricht<textarea required rows="4" name="message" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box; resize: vertical"></textarea></label>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px">
+              <button type="submit" style="min-height: 52px; padding: 0 26px; border-radius: 999px; font-family: inherit; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; cursor: inherit; border: 2px solid #FFFFFF; background: #FFFFFF; color: #0A0A0A">Anfrage senden →</button>
+              <button type="button" data-action="back-to-choice" style="min-height: 52px; padding: 0 26px; border-radius: 999px; font-family: inherit; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; cursor: inherit; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF">← Zurück</button>
+            </div>
+          </form>
+        </div>
+        <div data-if="view:sent" hidden>
+          <div style="font-size: clamp(48px, 8vw, 140px); line-height: 0.9; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase">Danke!</div>
+          <p style="margin: 0; max-width: 560px; font-size: 20px; line-height: 1.45; color: #CFCFCF">Dein E-Mail-Programm öffnet sich mit deiner Anfrage. Du musst sie nur noch absenden.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #3A3A3A; padding-top: 20px; font-size: 18px; font-weight: 700">
+        <div>München, Deutschland</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 28px">
+          <a class="grow" href="#" style="color: #FFFFFF">Instagram</a>
+          <a class="grow" href="https://www.linkedin.com/in/anna-kirschbauer-792073270/" target="_blank" rel="noopener" style="color: #FFFFFF">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true" style="position: fixed; left: -100px; top: -100px; width: calc(clamp(56px, 9vw, 152px) * 0.19); height: calc(clamp(56px, 9vw, 152px) * 0.19); transform: translate(-50%, -50%); border-radius: 50%; background: #FFFFFF; mix-blend-mode: difference; pointer-events: none; z-index: 100; opacity: 0; transition: width .2s ease, height .2s ease, margin .2s ease, opacity .2s ease"></div>
+
+</div>
+</body>
+</html>

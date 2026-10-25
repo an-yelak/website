@@ -1,0 +1,3 @@
+/* Conditional blocks toggled by site.js; they must not affect layout. */
+[data-if] { display: contents; }
+[data-if][hidden] { display: none; }

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dogtor Doodle – Projekt</title>
+<link rel="alternate" hreflang="en" href="en/dogtor-doodle.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&amp;family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+@keyframes idRot{0%{opacity:0}0.4%{opacity:1}8.33%{opacity:1}8.73%{opacity:0}100%{opacity:0}}
+.id-rot{position:absolute;inset:0;opacity:0;animation:idRot 36s linear infinite}
+@media (prefers-reduced-motion: reduce){.id-rot{animation:none}.id-rot.id-first{opacity:1}}
+@media (hover: hover){.site,.site a,.site button{cursor:none}}
+@media (hover: none){.cursor{display:none}}
+.site nav a,.site .grow{display:inline-block;transition:transform .2s ease;transform-origin:left center}
+.site nav a:hover,.site .grow:hover{transform:scale(1.05)}
+a{color:#0A0A0A}a:hover{color:#5A5A5A}
+.screen{scrollbar-width:thin;scrollbar-color:#9E9E9E transparent}
+@keyframes lgMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.lg-marquee{display:flex;width:max-content;animation:lgMarquee 32s linear infinite}
+@keyframes nPop{0%{opacity:0;transform:translateY(35%) scale(.9)}6%{opacity:1;transform:translateY(-6%) scale(1.02)}9%{transform:translateY(2%) scale(.99)}12%,90%{opacity:1;transform:none}96%,100%{opacity:0;transform:none}}
+@keyframes nBar{0%,18%{opacity:0;transform:translateY(-260%)}19%{opacity:1;transform:translateY(-260%);animation-timing-function:cubic-bezier(.5,0,1,.6)}25%{transform:translateY(0)}27%{transform:translateY(4%) scale(1.1,.75)}30%{transform:translateY(-5%)}33%,90%{opacity:1;transform:none}96%,100%{opacity:0;transform:none}}
+@keyframes nLook{0%,35%{transform:none}38%,47%{transform:translateX(-5%)}51%,60%{transform:translateX(5%)}63%,100%{transform:none}}
+@keyframes nBlink{0%,66%{transform:none}68%{transform:scaleY(.08)}70%{transform:scaleY(1.04)}72%,100%{transform:none}}
+.n-pop{animation:nPop 8s cubic-bezier(.2,.7,.2,1) infinite}
+.n-bar{animation:nBar 8s ease-in-out infinite}
+.n-look{animation:nLook 8s ease-in-out infinite}
+.n-blinkO{animation:nBlink 8s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.n-pop,.n-bar,.n-look,.n-blinkO,.lg-marquee{animation:none}}
+@keyframes pLook{0%,35%{transform:none}38%,47%{transform:translateX(-30px)}51%,60%{transform:translateX(30px)}63%,100%{transform:none}}
+@keyframes pBlink{0%,66%{transform:none}68%{transform:scaleY(.08)}70%{transform:scaleY(1.04)}72%,100%{transform:none}}
+.p-look{animation:pLook 8s ease-in-out .3s infinite}
+.p-blink{animation:pBlink 8s ease-in-out .3s infinite;transform-box:fill-box;transform-origin:50% 50%}
+@media (prefers-reduced-motion: reduce){.p-look,.p-blink{animation:none}}
+@keyframes icC{0%{fill:#762820}16.667%{fill:#F18337}33.333%{fill:#F0CCE3}50%{fill:#84C1EB}66.667%{fill:#FABD78}83.333%{fill:#988F83}100%{fill:#762820}}
+.ic{animation:icC 2.70s steps(1,end) infinite}
+@media (prefers-reduced-motion: reduce){.ic{animation:none}}
+@keyframes globeSpin{from{transform:translateX(0)}to{transform:translateX(242px)}}
+.globe-spin{animation:globeSpin 14s linear infinite}
+@media (prefers-reduced-motion: reduce){.globe-spin{animation:none}}
+@keyframes nWalk{from{left:100%}to{left:calc(clamp(180px, 22vw, 320px) * -0.664)}}
+.n-walk{left:100%;animation:nWalk 11s linear infinite}
+@media (prefers-reduced-motion: reduce){.n-walk{animation:none;left:40%}}
+.site input:focus,.site textarea:focus{outline:2px solid #FF3D00;outline-offset:6px}
+</style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<div class="site" style="font-family: 'Inter Tight', system-ui, sans-serif; color: #0A0A0A; background: #FFFFFF; min-height: 100vh">
+
+  <header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 2px solid #0A0A0A">
+    <nav style="max-width: 1440px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+      <a href="index.html" style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; text-decoration: none; text-transform: uppercase">Anna Kirschbauer</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 32px; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em">
+        <a href="index.html" style="text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; padding: 10px 0">Projekte</a>
+        <a href="ueber-mich.html" style="text-decoration: none; padding: 10px 0">Über mich</a>
+        <a href="#kontakt" data-action="open-contact" style="text-decoration: none; padding: 10px 0">Kontakt</a>
+        <div style="display: flex; gap: 6px; align-items: center; padding-left: 24px; border-left: 2px solid #0A0A0A">
+          <span aria-current="true" style="padding: 10px 2px; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px">DE</span>
+          <span aria-hidden="true" style="color: #5A5A5A">/</span>
+          <a href="en/dogtor-doodle.html" lang="en" style="text-decoration: none; padding: 10px 2px; color: #5A5A5A">EN</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section aria-label="Film" style="background: #E85A2E; padding: 0">
+    <video src="assets/video/dogtor-doodle-01.mp4" poster="assets/img/dogtor-doodle-02.jpg" controls autoplay muted loop playsinline aria-label="Erklärfilm Dogtor Doodle: Schlaf und Träume" style="display: block; width: min(100%, calc((100vh - 88px) * 1.7778)); margin: 0 auto; height: auto; aspect-ratio: 16 / 9; background: #E85A2E"></video>
+  </section>
+
+  <!-- Konzept -->
+  <section style="background: #FFE6D2; color: #211306; padding: clamp(56px, 7vw, 112px) 32px">
+    <div style="max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <div style="font-size: clamp(48px, 8vw, 128px); line-height: 0.9; font-weight: 900; letter-spacing: -0.04em; color: #FD4E16">wissenschaft aber easy!</div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+        <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #BA212D">Format</div><div style="font-size: clamp(20px, 2vw, 26px); font-weight: 700; line-height: 1.25; margin-top: 8px">YouTube Video, 3 bis 4 Minuten</div></div>
+        <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #BA212D">Zielgruppe</div><div style="font-size: clamp(20px, 2vw, 26px); font-weight: 700; line-height: 1.25; margin-top: 8px">Junge Erwachsene, die sich schnell Wissen aneignen wollen</div></div>
+        <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #BA212D">Stil</div><div style="font-size: clamp(20px, 2vw, 26px); font-weight: 700; line-height: 1.25; margin-top: 8px">Illustration</div></div>
+        <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #BA212D">Ziel</div><div style="font-size: clamp(20px, 2vw, 26px); font-weight: 700; line-height: 1.25; margin-top: 8px">Spannende Themen vereinfacht erklären</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess -->
+  <section style="background: #FFFFFF; padding: 0">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 0">
+      <img src="assets/img/dogtor-doodle-03.jpg" alt="Entwicklung der Figur Dogtor Doodle" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; ">
+      <img src="assets/img/dogtor-doodle-04.jpg" alt="Entwicklung der Figur Dogtor Doodle" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; ">
+    </div>
+  </section>
+
+  <!-- 2 Farbpalette -->
+  <section style="background: #FFE6D2; color: #211306; padding: clamp(56px, 7vw, 112px) 32px">
+    <div style="max-width: 1440px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; max-width: 1000px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="aspect-ratio: 1 / 1; background: #FD4E16; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12)"></div>
+        <div style="font-weight: 800; font-size: 18px">Orange</div>
+        <div style="font-size: 14px; line-height: 1.5; opacity: .72">HEX #FD4E16</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="aspect-ratio: 1 / 1; background: #FCBE0F; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12)"></div>
+        <div style="font-weight: 800; font-size: 18px">Gelb</div>
+        <div style="font-size: 14px; line-height: 1.5; opacity: .72">HEX #FCBE0F</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="aspect-ratio: 1 / 1; background: #BA212D; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12)"></div>
+        <div style="font-weight: 800; font-size: 18px">Rot</div>
+        <div style="font-size: 14px; line-height: 1.5; opacity: .72">HEX #BA212D</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="aspect-ratio: 1 / 1; background: #211306; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12)"></div>
+        <div style="font-weight: 800; font-size: 18px">Dunkelbraun</div>
+        <div style="font-size: 14px; line-height: 1.5; opacity: .72">HEX #211306</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="aspect-ratio: 1 / 1; background: #FFE6D2; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12)"></div>
+        <div style="font-weight: 800; font-size: 18px">Creme</div>
+        <div style="font-size: 14px; line-height: 1.5; opacity: .72">HEX #FFE6D2</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Varianten -->
+  <section style="background: #FFFFFF; padding: 0">
+    <img src="assets/img/dogtor-doodle-05.jpg" alt="Farbvarianten der Szenen" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; ">
+  </section>
+
+  <!-- Stills -->
+  <section style="background: #E85A2E; padding: 0">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 0">
+        <img src="assets/img/dogtor-doodle-06.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+        <img src="assets/img/dogtor-doodle-07.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+        <img src="assets/img/dogtor-doodle-08.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+        <img src="assets/img/dogtor-doodle-09.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+        <img src="assets/img/dogtor-doodle-10.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+        <img src="assets/img/dogtor-doodle-11.jpg" alt="Szene aus dem Film" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover">
+    </div>
+  </section>
+
+  <!-- Logo -->
+  <section style="background: #FFFFFF; padding: 0">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 0">
+      <img src="assets/img/dogtor-doodle-12.jpg" alt="Logo von Dogtor Doodle" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; ">
+      <img src="assets/img/dogtor-doodle-13.jpg" alt="Der Film auf YouTube" style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; ">
+    </div>
+  </section>
+
+  <!-- Titel + Infos -->
+  <section style="background: #FFFFFF; color: #0A0A0A; padding: clamp(56px, 7vw, 112px) 32px">
+    <div style="max-width: 1440px; margin: 0 auto">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; border-bottom: 2px solid currentColor; padding-bottom: 32px">
+      <h1 style="margin: 0; font-size: clamp(64px, 11vw, 184px); line-height: 0.85; font-weight: 900; letter-spacing: -0.05em">Dogtor Doodle<span style="color: #E85A2E">.</span></h1>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 48px; font-size: 16px; min-width: 280px">
+        <div><div style="font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: inherit; opacity: .72">Kategorie</div><div style="font-weight: 600; margin-top: 4px">Motion Design</div></div>
+        <div><div style="font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: inherit; opacity: .72">Leistungen</div><div style="font-weight: 600; margin-top: 4px">Regie, Konzept, Musik</div></div>
+        <div><div style="font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: inherit; opacity: .72">Team</div><div style="font-weight: 600; margin-top: 4px">mit Sonja Kopping und Hanna Cho</div></div>
+      </div>
+    </div>
+    <p style="margin: 40px 0 0; max-width: 820px; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.25; font-weight: 600; letter-spacing: -0.015em">„Wissenschaft leicht gemacht“: In diesem Erklärfilm zeigt Dogtor Doodle, warum man beim Einschlafen manchmal zusammenzuckt. Kurze, handgezeichnete Szenen erklären das Einschlafzucken verständlich und mit einem Augenzwinkern.</p>
+    </div>
+  </section>
+
+  <!-- Weiter -->
+  <section style="background: #FFFFFF; color: #0A0A0A; padding: 0 32px clamp(56px, 7vw, 112px)">
+    <div style="max-width: 1440px; margin: 0 auto">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px; border-top: 2px solid currentColor; padding-top: 24px">
+      <a class="grow" href="index.html" style="font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; text-decoration: none">← Alle Projekte</a>
+      <a class="grow" href="noeo.html" style="font-size: clamp(32px, 4vw, 56px); font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; text-decoration: none">Nächstes Projekt →</a>
+    </div>
+    </div>
+  </section>
+
+  <section id="kontakt" style="margin-top: 0; background: #0A0A0A; color: #FFFFFF">
+    <div style="max-width: 1440px; margin: 0 auto; padding: 96px 32px 40px; display: flex; flex-direction: column; gap: 64px">
+      <div style="display: flex; flex-direction: column; gap: 24px">
+        <div style="font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3D00">Neues Projekt?</div>
+        <a class="grow" href="mailto:an.kirschbauer@gmail.com" data-action="open-contact" style="color: #FFFFFF; text-decoration: none; font-size: clamp(44px, 7vw, 120px); line-height: 0.9; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase">Lass uns<br>reden →</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #3A3A3A; padding-top: 24px; font-size: 15px; font-weight: 500">
+        <div>an.kirschbauer@gmail.com</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px">
+          <a class="grow" href="#" style="color: #FFFFFF">Instagram</a>
+          <a class="grow" href="https://www.linkedin.com/in/anna-kirschbauer-792073270/" target="_blank" rel="noopener" style="color: #FFFFFF">LinkedIn</a>
+          <a class="grow" href="#" style="color: #FFFFFF">Impressum</a>
+          <a class="grow" href="#" style="color: #FFFFFF">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div role="dialog" aria-modal="true" aria-label="Kontakt" data-contact aria-hidden="true" style="position: fixed; inset: 0; z-index: 90; background: #0A0A0A; color: #FFFFFF; clip-path: circle(0px at 0px 0px); transition: clip-path .8s cubic-bezier(.7,0,.2,1); pointer-events: none; overflow-y: auto">
+    <div style="max-width: 1440px; min-height: 100%; margin: 0 auto; padding: 24px 32px 40px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+        <div style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; text-transform: uppercase">Anna Kirschbauer</div>
+        <button type="button" data-action="close-contact" aria-label="Schließen" style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; font-size: 34px; line-height: 1; cursor: inherit; display: flex; align-items: center; justify-content: center; padding: 0">×</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <div style="font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3D00">Lass uns reden</div>
+        <div data-if="view:choice">
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <button type="button" class="grow" data-action="open-form" style="display: block; background: none; border: 0; padding: 0; margin: 0; text-align: left; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: clamp(40px, 7vw, 120px); line-height: 1; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase; cursor: inherit">Anfrage schicken →</button>
+            <a class="grow" href="mailto:an.kirschbauer@gmail.com" style="display: block; background: none; border: 0; padding: 0; margin: 0; text-align: left; color: #FFFFFF; text-decoration: none; font-family: inherit; font-size: clamp(40px, 7vw, 120px); line-height: 1; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase; cursor: inherit">E-Mail schreiben →</a>
+          </div>
+          <div style="font-size: 18px; font-weight: 500; color: #9E9E9E">an.kirschbauer@gmail.com</div>
+        </div>
+        <div data-if="view:form" hidden>
+          <form data-contact-form style="display: flex; flex-direction: column; gap: 28px; max-width: 900px">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+              <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Name<input type="text" required autocomplete="name" name="name" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box"></label>
+              <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">E-Mail<input type="email" required autocomplete="email" name="email" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box"></label>
+            </div>
+            <fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px">
+              <legend style="padding: 0; margin-bottom: 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Wobei kann ich dir helfen?</legend>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px">
+                
+                  <div data-if="chip:0:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="0" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Branding</button></div>
+                  <div data-if="chip:0:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="0" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Branding</button></div>
+                
+                  <div data-if="chip:1:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="1" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Packaging</button></div>
+                  <div data-if="chip:1:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="1" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Packaging</button></div>
+                
+                  <div data-if="chip:2:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="2" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Kampagne</button></div>
+                  <div data-if="chip:2:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="2" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Kampagne</button></div>
+                
+                  <div data-if="chip:3:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="3" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Social Media</button></div>
+                  <div data-if="chip:3:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="3" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Social Media</button></div>
+                
+                  <div data-if="chip:4:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="4" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Website</button></div>
+                  <div data-if="chip:4:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="4" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Website</button></div>
+                
+                  <div data-if="chip:5:on" hidden><button type="button" aria-pressed="true" data-action="toggle-chip" data-index="5" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: #FFFFFF; color: #0A0A0A">Sonstiges</button></div>
+                  <div data-if="chip:5:off"><button type="button" aria-pressed="false" data-action="toggle-chip" data-index="5" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 2px solid #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; cursor: inherit; background: transparent; color: #FFFFFF">Sonstiges</button></div>
+                
+              </div>
+            </fieldset>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9E9E9E">Nachricht<textarea required rows="4" name="message" style="background: transparent; border: 0; border-bottom: 2px solid #FFFFFF; border-radius: 0; color: #FFFFFF; font-family: inherit; font-size: 22px; font-weight: 500; letter-spacing: 0; text-transform: none; padding: 10px 0; width: 100%; box-sizing: border-box; resize: vertical"></textarea></label>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px">
+              <button type="submit" style="min-height: 52px; padding: 0 26px; border-radius: 999px; font-family: inherit; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; cursor: inherit; border: 2px solid #FFFFFF; background: #FFFFFF; color: #0A0A0A">Anfrage senden →</button>
+              <button type="button" data-action="back-to-choice" style="min-height: 52px; padding: 0 26px; border-radius: 999px; font-family: inherit; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; cursor: inherit; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF">← Zurück</button>
+            </div>
+          </form>
+        </div>
+        <div data-if="view:sent" hidden>
+          <div style="font-size: clamp(48px, 8vw, 140px); line-height: 0.9; font-weight: 900; letter-spacing: -0.045em; text-transform: uppercase">Danke!</div>
+          <p style="margin: 0; max-width: 560px; font-size: 20px; line-height: 1.45; color: #CFCFCF">Dein E-Mail-Programm öffnet sich mit deiner Anfrage. Du musst sie nur noch absenden.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #3A3A3A; padding-top: 20px; font-size: 18px; font-weight: 700">
+        <div>München, Deutschland</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 28px">
+          <a class="grow" href="#" style="color: #FFFFFF">Instagram</a>
+          <a class="grow" href="https://www.linkedin.com/in/anna-kirschbauer-792073270/" target="_blank" rel="noopener" style="color: #FFFFFF">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true" style="position: fixed; left: -100px; top: -100px; width: calc(clamp(56px, 9vw, 152px) * 0.19); height: calc(clamp(56px, 9vw, 152px) * 0.19); transform: translate(-50%, -50%); border-radius: 50%; background: #FFFFFF; mix-blend-mode: difference; pointer-events: none; z-index: 100; opacity: 0; transition: opacity .2s ease"></div>
+
+</div>
+</body>
+</html>
