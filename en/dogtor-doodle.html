@@ -6,7 +6,7 @@
 <title>Dogtor Doodle – Project</title>
 <link rel="alternate" hreflang="de" href="../dogtor-doodle.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&amp;family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#FFFFFF}
 @keyframes idRot{0%{opacity:0}0.4%{opacity:1}8.33%{opacity:1}8.73%{opacity:0}100%{opacity:0}}
@@ -43,6 +43,9 @@ a{color:#0A0A0A}a:hover{color:#5A5A5A}
 @keyframes nWalk{from{left:100%}to{left:calc(clamp(180px, 22vw, 320px) * -0.664)}}
 .n-walk{left:100%;animation:nWalk 11s linear infinite}
 @media (prefers-reduced-motion: reduce){.n-walk{animation:none;left:40%}}
+.hvid img{transition:opacity .35s ease}
+@media (hover: hover){.hvid:hover img{opacity:0}}
+@media (hover: none){.hvid img{opacity:0}}
 .site input:focus,.site textarea:focus{outline:2px solid #FF3D00;outline-offset:6px}
 </style>
 <link rel="stylesheet" href="../assets/site.css">
@@ -187,8 +190,7 @@ a{color:#0A0A0A}a:hover{color:#5A5A5A}
         <div style="display: flex; flex-wrap: wrap; gap: 24px">
           <a class="grow" href="#" style="color: #FFFFFF">Instagram</a>
           <a class="grow" href="https://www.linkedin.com/in/anna-kirschbauer-792073270/" target="_blank" rel="noopener" style="color: #FFFFFF">LinkedIn</a>
-          <a class="grow" href="#" style="color: #FFFFFF">Legal notice</a>
-          <a class="grow" href="#" style="color: #FFFFFF">Privacy</a>
+          <a class="grow" href="legal-notice.html" style="color: #FFFFFF">Legal notice</a>
         </div>
       </div>
     </div>
